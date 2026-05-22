@@ -23,12 +23,29 @@ Before starting the experiments, you must configure your development environment
 >[!Caution]
 >CRITICAL : Path Environment Variables
 >Simply downloading these tools is not enough. You **must** add the `/bin` folder of each tool to your System Path. Without this, your terminal will not recognize commands like `gcc`, `flex`, or `bison`.
+> If you want to learn how the setup works manually, you can still follow the manual PATH configuration steps below.
 
 * **How to set up Paths:** [Official Guide: Adding to Windows Path](https://www.computerhope.com/issues/ch000549.htm)
 * **Verify Installation:** Open your terminal and type `gcc --version` and `flex --version`.
+---
 
 > [!NOTE]
-> **Automated Setup:** I am currently developing a custom script to automate the installation and path configuration. Until then, please perform the setup manually.
+> I have now added an automated installer script for this Prerequisites & Environment Setup
+>
+> The installer automatically:
+>
+> - Installs GCC
+> - Installs WinFlexBison
+> - Configures Environment PATH variables
+> - Verifies installation
+> - Enables compiler commands globally
+>
+> No manual PATH setup required.
+>
+> [Download Latest Installer](../../releases/latest)
+
+> [!IMPORTANT]
+> Run the installer as **Administrator** for proper installation and system configuration.
 
 ---
 
