@@ -15,7 +15,7 @@ Instead of typing sh*t tons of code from low-quality PDFs, you can find verified
 
 ---
 
-## Repository Contents 📂
+## Repository Contents 
 
 ### 1. Official Lab Manual
 
@@ -37,6 +37,7 @@ Each experiment is isolated in its own folder within `/Experiments/` for direct 
 | **All Experiments** | View the index of all 7 Lab Tasks | [View Experiments](./Experiments/README.md) |
 | **Lab Manual** | Download the full PDF | [Download Manual PDF](/Docs/CompilerDesign-Lab-Manual.pdf) |
 | **Lab Manual** | Download the full Word Document | [Download Manual DOCX](/Docs/CompilerDesign-Lab-Manual.docx) |
+| **Automated Installer** | Download the GCC + Flex + Bison auto setup installer | [Download Latest Release](../../releases/latest) |
 
 
 </div>
@@ -47,6 +48,32 @@ Each experiment is isolated in its own folder within `/Experiments/` for direct 
 1. **Clone the Repo or Download the Zip:** `git clone https://github.com/Gappyjosuke/minic-compiler.git`
 2. **Navigate:** Go to the `Experiments/` folder to find the specific task you need.
 3. **Run:** Every folder contains a local README explaining how to compile the specific `.c` or `.l` files.
+
+---
+
+## Automated Installer Release
+
+[Download Latest Release](../../releases/latest)
+
+The installer automatically:
+
+- Installs GCC
+- Installs WinFlexBison
+- Configures Environment PATH variables
+- Verifies installation
+- Enables `gcc`, `flex`, and `bison` commands globally
+
+> [!IMPORTANT]
+> Run the installer as **Administrator**.
+>
+> Administrator access is required for:
+>
+> - PATH environment variable configuration
+> - Package installation
+> - System-level setup operations
+
+> [!NOTE]
+> After installation, restart your terminal if commands like `gcc`, `flex`, or `bison` are not detected immediately.
 
 ---
 
